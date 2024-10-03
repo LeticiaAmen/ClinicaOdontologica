@@ -1,27 +1,21 @@
 package logica;
 
+import jakarta.persistence.Entity;
+
 import java.util.Date;
 
+@Entity
 public class Responsable extends Persona{
 
-    private int IdResponsable;
+
     private String TipoResp;
 
     public Responsable() {
     }
 
-    public Responsable(String dni, String nombre, String apellido, String telefono, String direccion, Date fechaNac, int idResponsable, String tipoResp) {
-        super(dni, nombre, apellido, telefono, direccion, fechaNac);
-        IdResponsable = idResponsable;
+    public Responsable(int id, String dni, String nombre, String apellido, String telefono, String direccion, Date fechaNac, String tipoResp) {
+        super(id, dni, nombre, apellido, telefono, direccion, fechaNac);
         TipoResp = tipoResp;
-    }
-
-    public int getIdResponsable() {
-        return IdResponsable;
-    }
-
-    public void setIdResponsable(int idResponsable) {
-        IdResponsable = idResponsable;
     }
 
     public String getTipoResp() {

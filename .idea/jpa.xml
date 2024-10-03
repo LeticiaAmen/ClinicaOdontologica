@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="mysql">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+  </component>
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit name="ClinicaOdontologica_PU" persistenceXmlPath="src/main/resources/META-INF/persistence.xml">
+        <entities>
+          <entity value="logica.Paciente" />
+          <entity value="logica.Odontologo" />
+          <entity value="logica.Persona" />
+          <entity value="logica.Secretario" />
+          <entity value="logica.Turno" />
+          <entity value="logica.Horario" />
+          <entity value="logica.Usuario" />
+          <entity value="logica.Responsable" />
+        </entities>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>

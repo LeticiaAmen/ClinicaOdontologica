@@ -1,12 +1,26 @@
 package logica;
 
+import jakarta.persistence.*;
+
 import java.util.Date;
 
+@Entity
 public class Turno {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idTurno;
+    @Temporal(TemporalType.DATE)
     private Date fechaTurno;
     private String horaTurno;
     private String afeccion;
+
+    @ManyToOne
+    @JoinColumn(name = "idTurno")
+    private Odontologo odonto;
+
+    @ManyToOne
+    @JoinColumn(name = "idTurno2")
+    private Paciente pacien;
 
     public Turno() {
     }

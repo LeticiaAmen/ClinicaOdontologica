@@ -1,14 +1,31 @@
 package logica;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+
 import java.util.Date;
 import java.util.List;
 
+@Entity
 public class Paciente extends Persona{
-    private int idPaciente;
+  //  private int idPaciente;
     private boolean tieneOS;
     private String tipoSangre;
+
+    @OneToOne
     private Responsable unResponsable;
+
+    @OneToMany(mappedBy = "pacien")
     private List<Turno> listaTurnos;
+
+    public Paciente(int id, String dni, String nombre, String apellido, String telefono, String direccion, Date fechaNac, boolean tieneOS, String tipoSangre, Responsable unResponsable, List<Turno> listaTurnos) {
+        super(id, dni, nombre, apellido, telefono, direccion, fechaNac);
+        this.tieneOS = tieneOS;
+        this.tipoSangre = tipoSangre;
+        this.unResponsable = unResponsable;
+        this.listaTurnos = listaTurnos;
+    }
 
     public Responsable getUnResponsable() {
         return unResponsable;
@@ -29,22 +46,6 @@ public class Paciente extends Persona{
     public Paciente() {
     }
 
-    public Paciente(String dni, String nombre, String apellido, String telefono, String direccion, Date fechaNac, int idPaciente, boolean tieneOS, String tipoSangre, Responsable unResponsable, List<Turno> listaTurnos) {
-        super(dni, nombre, apellido, telefono, direccion, fechaNac);
-        this.idPaciente = idPaciente;
-        this.tieneOS = tieneOS;
-        this.tipoSangre = tipoSangre;
-        this.unResponsable = unResponsable;
-        this.listaTurnos = listaTurnos;
-    }
-
-    public int getIdPaciente() {
-        return idPaciente;
-    }
-
-    public void setIdPaciente(int idPaciente) {
-        this.idPaciente = idPaciente;
-    }
 
     public boolean isTieneOS() {
         return tieneOS;
