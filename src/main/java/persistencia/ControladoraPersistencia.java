@@ -16,4 +16,7 @@ public class ControladoraPersistencia {
     public void crearUsuario(Usuario usuario) {
         usuarioJPA.create(usuario);
     }
+
+    public ControladoraPersistencia() {
+    }
 }

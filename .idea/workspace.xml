@@ -9,33 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="plantilla bootstrap inicial">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/HorarioJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/OdontologoJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/PacienteJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/PersonaJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/ResponsableJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/SecretarioJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/TurnoJpaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/persistencia/UsuarioJpaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Entidades y relaciones con JPA">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/altaOdontologo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/altaUsuarios.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Horario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Odontologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Odontologo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Responsable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Responsable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Secretario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Secretario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Turno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.NewClass" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -232,6 +216,8 @@
       <workItem from="1727738168731" duration="992000" />
       <workItem from="1727797397943" duration="4528000" />
       <workItem from="1727870260735" duration="4728000" />
+      <workItem from="1727987344502" duration="3376000" />
+      <workItem from="1728478086987" duration="5218000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <option name="closed" value="true" />
@@ -257,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727479595075</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Entidades y relaciones con JPA">
+      <option name="closed" value="true" />
+      <created>1727987539552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727987539552</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +272,7 @@
     <MESSAGE value="primer commit" />
     <MESSAGE value="esquema lógico" />
     <MESSAGE value="plantilla bootstrap inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="plantilla bootstrap inicial" />
+    <MESSAGE value="Entidades y relaciones con JPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entidades y relaciones con JPA" />
   </component>
 </project>

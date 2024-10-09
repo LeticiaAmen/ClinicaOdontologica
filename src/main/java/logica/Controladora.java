@@ -6,8 +6,11 @@ public class Controladora {
 
     ControladoraPersistencia controladoraPersistencia = new ControladoraPersistencia();
 
-    public void crearUsuario(int id, String nombreUsuario, String contrasenia, String rol) {
-        Usuario usuario = new Usuario(id, nombreUsuario, contrasenia, rol);
+    public void crearUsuario(String nombreUsuario, String contrasenia, String rol) {
+        Usuario usuario = new Usuario();
+        usuario.setNombreUsuario(nombreUsuario);
+        usuario.setContrasenia(contrasenia);
+        usuario.setRol(rol);
         controladoraPersistencia.crearUsuario(usuario);
     }
 
