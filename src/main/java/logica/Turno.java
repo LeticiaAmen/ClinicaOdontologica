@@ -15,11 +15,11 @@ public class Turno {
     private String afeccion;
 
     @ManyToOne
-    @JoinColumn(name = "idTurno")
+    @JoinColumn(name = "idOdonto")
     private Odontologo odonto;
 
     @ManyToOne
-    @JoinColumn(name = "idTurno2")
+    @JoinColumn(name = "idPacien")
     private Paciente pacien;
 
     public Turno() {

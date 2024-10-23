@@ -9,16 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Entidades y relaciones con JPA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/altaOdontologo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/altaUsuarios.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" afterDir="false" />
+    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Pantallas para alta usuario y odontólogo">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Turno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.NewClass" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -217,7 +215,9 @@
       <workItem from="1727797397943" duration="4528000" />
       <workItem from="1727870260735" duration="4728000" />
       <workItem from="1727987344502" duration="3376000" />
-      <workItem from="1728478086987" duration="5218000" />
+      <workItem from="1728478086987" duration="5739000" />
+      <workItem from="1729693559098" duration="8000" />
+      <workItem from="1729708102853" duration="5917000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <option name="closed" value="true" />
@@ -251,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727987539552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Pantallas para alta usuario y odontólogo">
+      <option name="closed" value="true" />
+      <created>1728483516865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728483516865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +281,7 @@
     <MESSAGE value="esquema lógico" />
     <MESSAGE value="plantilla bootstrap inicial" />
     <MESSAGE value="Entidades y relaciones con JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entidades y relaciones con JPA" />
+    <MESSAGE value="Pantallas para alta usuario y odontólogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pantallas para alta usuario y odontólogo" />
   </component>
 </project>
