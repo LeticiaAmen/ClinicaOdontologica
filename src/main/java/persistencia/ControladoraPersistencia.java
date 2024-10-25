@@ -1,8 +1,16 @@
 package persistencia;
 
+import logica.Controladora;
 import logica.Usuario;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class ControladoraPersistencia {
+
+
 
     HorarioJpaController horaJPA = new HorarioJpaController();
     OdontologoJpaController odontoJPA = new OdontologoJpaController();
@@ -18,5 +26,17 @@ public class ControladoraPersistencia {
     }
 
     public ControladoraPersistencia() {
+    }
+
+    public List<Usuario> getUsuarios(){
+        return  usuarioJPA.findUsuarioEntities();
+    }
+
+    public void borrarUsuario(int id) {
+        try {
+            usuarioJPA.destroy(id);
+        }catch( Exception e) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, e);
+        }
     }
 }

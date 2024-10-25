@@ -9,14 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Pantallas para alta usuario y odontólogo">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" afterDir="false" />
+    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Alta de usuarios y comienzo de tabla para verlos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SvEditarUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SvEliminarUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Turno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.NewClass" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Servlet" />
       </list>
     </option>
   </component>
@@ -49,6 +52,9 @@
 }</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="JspContextManager">
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -75,32 +81,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 11.0.0-M26.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;22&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Leticia/IdeaProjects/ClinicaOdontologica/src/main/resources/META-INF/persistence.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4218391&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jpb.dtoDeclaration&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 11.0.0-M26.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Leticia/IdeaProjects/ClinicaOdontologica/src/main/resources/META-INF/persistence.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4218391",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 11.0.0-M26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M26" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -217,7 +223,10 @@
       <workItem from="1727987344502" duration="3376000" />
       <workItem from="1728478086987" duration="5739000" />
       <workItem from="1729693559098" duration="8000" />
-      <workItem from="1729708102853" duration="5917000" />
+      <workItem from="1729708102853" duration="5977000" />
+      <workItem from="1729795309933" duration="1877000" />
+      <workItem from="1729800123193" duration="1307000" />
+      <workItem from="1729859897129" duration="3109000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <option name="closed" value="true" />
@@ -259,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728483516865</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Alta de usuarios y comienzo de tabla para verlos">
+      <option name="closed" value="true" />
+      <created>1729718019458</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729718019458</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +299,7 @@
     <MESSAGE value="plantilla bootstrap inicial" />
     <MESSAGE value="Entidades y relaciones con JPA" />
     <MESSAGE value="Pantallas para alta usuario y odontólogo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pantallas para alta usuario y odontólogo" />
+    <MESSAGE value="Alta de usuarios y comienzo de tabla para verlos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alta de usuarios y comienzo de tabla para verlos" />
   </component>
 </project>

@@ -2,6 +2,8 @@ package logica;
 
 import persistencia.ControladoraPersistencia;
 
+import java.util.List;
+
 public class Controladora {
 
     ControladoraPersistencia controladoraPersistencia = new ControladoraPersistencia();
@@ -14,4 +16,13 @@ public class Controladora {
         controladoraPersistencia.crearUsuario(usuario);
     }
 
+    public List<Usuario> getUsuarios() {
+        return controladoraPersistencia.getUsuarios();
+
+
+    }
+
+    public void borrarUsuario(int id) {
+        controladoraPersistencia.borrarUsuario(id);
+    }
 }
