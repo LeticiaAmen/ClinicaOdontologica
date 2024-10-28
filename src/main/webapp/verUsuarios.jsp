@@ -55,7 +55,7 @@
                                 <input type="hidden" name="id" value="<%=usu.getIdUsuario()%>"><%--  esto es para mandar el id al servlet   --%>
                             </form>
 
-                            <form name="editar" action="SvEditarUsuarios" method="post"> <%-- Esto es para mandar el código al servlet  --%>
+                            <form name="editar" action="SvEditarUsuarios" method="get"> <%-- Esto es para mandar el código al servlet  --%>
                                 <button type="submit" class="btn btn-primary btn-user btn-block" style="margin-left: 5px;">
                                     <i class="fas fa-pencil-alt"></i> Editar
                                 </button>
