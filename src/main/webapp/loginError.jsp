@@ -44,19 +44,10 @@
                                     <h1 class="h4 text-gray-900 mb-4">Login</h1>
                                 </div>
                                 <form class="user" action="SvLogin" method="post">
-                                    <div class="form-group">
-                                        <input  class="form-control form-control-user"
-                                               id="usuario" name="usuario"
-                                               placeholder="Usuario...">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control form-control-user"
-                                               id="contrasenia" name="contrasenia" placeholder="Contraseña...">
-                                    </div>
-
-                                    <button class="btn btn-primary btn-user btn-block" type="submit">
-                                        Ingresar
-                                    </button>
+                                    <p>Nombre de usuario o contraseña incorrecto</p>
+                                    <a href="login.jsp" class="btn btn-primary btn-user btn-block">
+                                        Volver
+                                    </a>
                                     <hr>
                                 </form>
                                 <hr>

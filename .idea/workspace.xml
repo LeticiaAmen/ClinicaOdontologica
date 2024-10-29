@@ -9,15 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Eliminar usuarios">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/editarUsuarios.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+    <list default="true" id="74b49f4f-6da2-4cbd-a71d-a48a2da6129b" name="Changes" comment="Plantilla login">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SvLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/sinLogin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logica/Controladora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/persistencia/ControladoraPersistencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SvEditarUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SvEditarUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SvUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/verUsuarios.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyfinal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/componentes/bodyprimero.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,8 @@
       <workItem from="1729795309933" duration="1877000" />
       <workItem from="1729800123193" duration="1307000" />
       <workItem from="1729859897129" duration="5722000" />
-      <workItem from="1730123298087" duration="1434000" />
+      <workItem from="1730123298087" duration="1738000" />
+      <workItem from="1730207261583" duration="5952000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <option name="closed" value="true" />
@@ -284,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729863075992</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Plantilla login">
+      <option name="closed" value="true" />
+      <created>1730124755582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730124755582</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +319,7 @@
     <MESSAGE value="Pantallas para alta usuario y odontólogo" />
     <MESSAGE value="Alta de usuarios y comienzo de tabla para verlos" />
     <MESSAGE value="Eliminar usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminar usuarios" />
+    <MESSAGE value="Plantilla login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plantilla login" />
   </component>
 </project>
